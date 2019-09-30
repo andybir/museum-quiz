@@ -3,7 +3,7 @@
 
 ## Project Description
 
-learn about museum exhibits, take a quiz to test your knowledge
+Learn about museum exhibits, take a quiz to test your knowledge
 
 ## Wireframes
 
@@ -14,10 +14,6 @@ https://ninjamock.com/s/6G2TTFx
 ```
 https://api.harvardartmuseums.org/object/304006?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e
 ```
-
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP
 - Display a themed museum collections for user to learn about
@@ -35,11 +31,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## React Component Hierarchy
 
-Define the the React components and the architectural design of your app.
+https://i.imgur.com/Kn730IZ.jpg
 
 ## Priority Matrix
 
-Add in a picture of your Priority Matrix
+https://i.imgur.com/QYETWZH.jpg
+https://i.imgur.com/W0eU8Lz.jpg
 
 ## Functional Components
 
