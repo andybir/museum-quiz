@@ -19,15 +19,18 @@ https://api.harvardartmuseums.org/object/304006?apikey=c7afc0b0-e325-11e9-9fc2-e
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+#### MVP
+- Display three collections for user to learn about
+- Build out 5 objects with image and description per collection
+- Create a quiz for each collection with multiple choice options
+- Display results of quiz
+- add simple CSS 
 
-#### PostMVP EXAMPLE
+#### PostMVP
 
-- Add user auth
+- Show quiz question progress bar in upper right corner
+- add more objects per collection
+- offer more variety for answer types, i.e. open ended or fill in the blank
 
 ## React Component Hierarchy
 
