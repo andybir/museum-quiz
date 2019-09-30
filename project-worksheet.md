@@ -20,7 +20,7 @@ https://api.harvardartmuseums.org/object/304006?apikey=c7afc0b0-e325-11e9-9fc2-e
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP
-- Display three collections for user to learn about
+- Display a themed museum collections for user to learn about
 - Build out 5 objects with image and description per collection
 - Create a quiz for each collection with multiple choice options
 - Display results of quiz
@@ -28,6 +28,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP
 
+- add two more collections
 - Show quiz question progress bar in upper right corner
 - add more objects per collection
 - offer more variety for answer types, i.e. open ended or fill in the blank
@@ -55,9 +56,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| render object img | H | 4hrs| --- | --- |
+| render object description | H | 3hrs| --- | --- |
+| create/upload questions to JSON | H | 3hrs| --- | --- |
+| render questions for each object | H | 4hrs| --- | --- |
+| render correct/incorrect + answer | H | 4hrs| --- | --- |
+| build out welcome page with collection choices | H | 4hrs| --- | --- |
+| build page to display results of quiz, offer choice to try again or choose new collection | H | 4hrs| --- | --- |
+| CSS | H | 4hrs| --- | --- |
+
+
+| Total | H | 30hrs| --- | --- |
 
 
 ## Additional Libraries
