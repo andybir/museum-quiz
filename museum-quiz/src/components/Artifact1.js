@@ -13,7 +13,7 @@ class Artifact1 extends Component {
     async componentDidMount() {
         const response = await axios('https://api.harvardartmuseums.org/object/287354?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
         const artifact = response.data
-        console.log(artifact)
+        // console.log(artifact)
         const img = response.data.images[0].baseimageurl
         const title = response.data.title
         const text = response.data.labeltext
@@ -26,7 +26,6 @@ class Artifact1 extends Component {
       }
 
     render() {
-        console.log(this.state.artifact)
         return(
             <div>
                 <h2>{this.state.title}</h2>

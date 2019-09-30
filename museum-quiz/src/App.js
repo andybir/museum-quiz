@@ -5,8 +5,8 @@ import Welcome from './components/Welcome'
 import Artifact1 from './components/Artifact1'
 import Artifact2 from './components/Artifact2'
 import Artifact3 from './components/Artifact3'
-import Artifact4 from './components/Artifact4'
-import Artifact5 from './components/Artifact5'
+// import Artifact4 from './components/Artifact4'
+// import Artifact5 from './components/Artifact5'
 import './App.css'
 
 class App extends Component {
@@ -42,8 +42,8 @@ class App extends Component {
           <Route exact path='/artifact1' component={Artifact1} />
           <Route exact path='/artifact2' component={Artifact2} />
           <Route exact path='/artifact3' component={Artifact3} />
-          <Route exact path='/artifact4' component={Artifact4} />
-          <Route exact path='/artifact5' component={Artifact5} />
+          {/* <Route exact path='/artifact4' component={Artifact4} />
+          <Route exact path='/artifact5' component={Artifact5} /> */}
         </Switch>
       </main>
       
