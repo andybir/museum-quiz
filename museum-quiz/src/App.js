@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import axios from 'axios'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './App.css'
 
-function App() {
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      collection: []
+    }
+  }
+
+  async componentDidMount() {
+    const response = await axios('https://api.harvardartmuseums.org/object/287354?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
+    console.log(response.data.images[0].baseimageurl)
+    const img = response.data.images[0].baseimageurl
+    const title = response.data.title
+    const text = response.data.labeltext
+    this.setState({
+      img: img,
+      title: title,
+      text: text
+    })
+  }
+
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>{this.state.title}</h2>
+      <img src={this.state.img} alt='' />
     </div>
-  );
+  )
+  }
 }
 
-export default App;
+export default () => (
+  <Router>
+    <App />
+  </Router>
+)
