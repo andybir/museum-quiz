@@ -3,6 +3,12 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 class Collection extends Component {
+    constructor() {
+        super()
+        this.state = {
+            artifact: []
+        }
+    }   
 
     async componentDidMount() {
         const response = await axios('https://api.harvardartmuseums.org/object/287354?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
@@ -12,22 +18,21 @@ class Collection extends Component {
         const title = response.data.title
         const text = response.data.labeltext
         this.setState({
-          artifact: artifact
-          // img: img,
-          // title: title,
-          // text: text
+          artifact: artifact,
+          img: img,
+          title: title,
+          text: text
         })
       }
 
     render() {
-        console.log(this.props.artifact)
+        console.log(this.state.artifact)
         return(
             <div>
-                <p>hello</p>
-                {/* <h2>{this.state.title}</h2>
-                <img src={this.props.img} alt='' style={{width: 300}}/>
+                <h2>{this.state.title}</h2>
+                <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.text}</p>
-                <button>Next</button> */}
+                <button>Next</button>
             </div>
         )
     }
