@@ -3,16 +3,16 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+learn about museum exhibits, take a quiz to test your knowledge
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+https://ninjamock.com/s/6G2TTFx
 
 ## API Snippet
 
 ```
-Paste a snippet from your API here that shows the shape of the data
+https://api.harvardartmuseums.org/object/304006?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e
 ```
 
 ### MVP/PostMVP - 5min
