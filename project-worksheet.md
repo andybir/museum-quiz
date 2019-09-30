@@ -42,17 +42,21 @@ Define the the React components and the architectural design of your app.
 Add in a picture of your Priority Matrix
 
 ## Functional Components
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
 | --- | :---: |  
-| Header | This will render the header include the nav | 
-| Footer | This will render the footer include the nav | 
+| Header | This will render the header include the nav |
+| Welcome | Will render three collection choices w/ corresponding img |
+| Collection 1 | Will render collection objects w/ img and context |
+| Quiz 1 | Will render 5 questions about the previous collection viewed by user |
+| Results 1 | Render the results of quiz, give option to try again or choose new collection |
+| Collection 2 | Will render collection objects w/ img and context |
+| Quiz 2 | Will render 5 questions about the previous collection viewed by user |
+| Results 2 | Render the results of quiz, give option to try again or choose new collection |
+| Collection 3 | Will render collection objects w/ img and context |
+| Quiz 3 | Will render 5 questions about the previous collection viewed by user |
+| Results 3 | Render the results of quiz, give option to try again or choose new collection |
 
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
