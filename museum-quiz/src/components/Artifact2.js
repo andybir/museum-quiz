@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-class Collection extends Component {
+class Artifact2 extends Component {
     constructor() {
         super()
         this.state = {
@@ -11,17 +11,21 @@ class Collection extends Component {
     }   
 
     async componentDidMount() {
-        const response = await axios('https://api.harvardartmuseums.org/object/287354?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
+        const response = await axios('https://api.harvardartmuseums.org/object/288118?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
         const artifact = response.data
         console.log(artifact)
         const img = response.data.images[0].baseimageurl
         const title = response.data.title
         const text = response.data.labeltext
+        const commentary = response.data.commentary
+        const description = response.data.description
         this.setState({
           artifact: artifact,
           img: img,
           title: title,
-          text: text
+          text: text,
+          commentary: commentary,
+          description: description
         })
       }
 
@@ -31,11 +35,11 @@ class Collection extends Component {
             <div>
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
-                <p>{this.state.text}</p>
-                <button>Next</button>
+                <p>{this.state.description}</p>
+                <button>{'Next'}</button>
             </div>
         )
     }
 }
 
-export default Collection
+export default Artifact2
