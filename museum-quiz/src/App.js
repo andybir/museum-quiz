@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Welcome from './components/Welcome'
 import Collection from './components/Collection'
 import './App.css'
 
@@ -14,15 +15,16 @@ class App extends Component {
 
   async componentDidMount() {
     const response = await axios('https://api.harvardartmuseums.org/object/287354?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
-    console.log(response.data.images[0].baseimageurl)
     const artifact = response.data
+    console.log(artifact)
     const img = response.data.images[0].baseimageurl
     const title = response.data.title
     const text = response.data.labeltext
     this.setState({
-      img: img,
-      title: title,
-      text: text
+      artifact: artifact
+      // img: img,
+      // title: title,
+      // text: text
     })
   }
 
@@ -31,7 +33,9 @@ class App extends Component {
     <div className="App">
       <main>
         <Switch>
-          <Route exact path='/collection' render={() => <Collection collection={this.state.img}/> } />
+          <Route exact path='/' component={Welcome} />
+          {/* <Route exact path='/collection' render={() => <Collection artifact={this.state.artifact}/> } /> */}
+          <Route exact path='/collection' component={Collection} />
         </Switch>
       </main>
       
