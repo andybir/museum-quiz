@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class IncorrectAnswer extends Component {
+class GreekCorAns1 extends Component {
     render() {
         return(
             <div>
-                <p>incorrect</p>
+                <p>correct!</p>
             </div>
         )
     }
 }
 
-export default IncorrectAnswer
+export default GreekCorAns1

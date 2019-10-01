@@ -2,23 +2,23 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Welcome from './components/Welcome'
-import Artifact1 from './components/Artifact1'
-import Artifact2 from './components/Artifact2'
-import Artifact3 from './components/Artifact3'
-import Artifact4 from './components/Artifact4'
-import Artifact5 from './components/Artifact5'
-import Quiz1 from './components/Quiz1'
-import GreekQuiz from './components/GreekQuiz'
+import GreekArt1 from './components/GreekArt1'
+import GreekArt2 from './components/GreekArt2'
+import GreekArt3 from './components/GreekArt3'
+import GreekArt4 from './components/GreekArt4'
+import GreekArt5 from './components/GreekArt5'
+import GreekQuiz1 from './components/GreekQuiz1'
+import GreekTest from './components/GreekTest'
 import './App.css'
-import CorrectAnswer from './components/CorrectAnswer'
-import IncorrectAnswer from './components/IncorrectAnswer'
+import GreekCorAns1 from './components/GreekCorAns1'
+import GreekIncAns1 from './components/GreekIncAns1'
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       artifact: [],
-      quiz: GreekQuiz
+      quiz: GreekTest
       
     }
     
@@ -47,14 +47,14 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Welcome} />
           {/* <Route exact path='/collection' render={() => <Collection artifact={this.state.artifact}/> } /> */}
-          <Route exact path='/artifact1' component={Artifact1} />
-          <Route exact path='/artifact2' component={Artifact2} />
-          <Route exact path='/artifact3' component={Artifact3} />
-          <Route exact path='/artifact4' component={Artifact4} />
-          <Route exact path='/artifact5' component={Artifact5} /> 
-          <Route exact path='/quiz1' render={() => <Quiz1 quiz={this.state.quiz} /> } /> 
-          <Route exact path='/correct-answer/' component={CorrectAnswer} />
-          <Route exact path='/incorrect-answer' component={IncorrectAnswer} />
+          <Route exact path='/greek-art1' component={GreekArt1} />
+          <Route exact path='/greek-art2' component={GreekArt2} />
+          <Route exact path='/greek-art3' component={GreekArt3} />
+          <Route exact path='/greek-art4' component={GreekArt4} />
+          <Route exact path='/greek-art5' component={GreekArt5} /> 
+          <Route exact path='/greek-quiz1' render={() => <GreekQuiz1 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-cor-ans1/' component={GreekCorAns1} />
+          <Route exact path='/greek-inc-ans1' component={GreekIncAns1} />
         </Switch>
       </main>
       

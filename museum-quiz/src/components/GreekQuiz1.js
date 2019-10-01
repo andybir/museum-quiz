@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-class Quiz1 extends Component {
+class GreekQuiz1 extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -13,9 +13,9 @@ class Quiz1 extends Component {
     getAnswer = (value) => {
         console.log(value)
         if (value) {
-            this.props.history.push('/correct-answer')
+            this.props.history.push('/greek-cor-ans1')
         } else {
-            this.props.history.push('/incorrect-answer')
+            this.props.history.push('/greek-inc-ans1')
         }
 
         // Modal???
@@ -40,11 +40,6 @@ class Quiz1 extends Component {
         //     return <Link to={'/incorrect-answer'} />
         // }
         // return e.target.getAttribute('data-correct') === true ? <Link to={'/correct-answer'} /> : <Link to={'/incorrect-answer'} />
-        
-    
-
-
-
     render () {
         // this.getAnswer()
         const quiz = this.props.quiz.questions[0] 
@@ -61,4 +56,4 @@ class Quiz1 extends Component {
     }
 }
 
-export default withRouter(Quiz1)
+export default withRouter(GreekQuiz1)
