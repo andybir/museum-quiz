@@ -7,14 +7,19 @@ import Artifact2 from './components/Artifact2'
 import Artifact3 from './components/Artifact3'
 import Artifact4 from './components/Artifact4'
 import Artifact5 from './components/Artifact5'
+import Quiz1 from './components/Quiz1'
+import GreekQuiz from './components/GreekQuiz'
 import './App.css'
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      artifact: []
+      artifact: [],
+      quiz: GreekQuiz
+      
     }
+    
   }
 
   // async componentDidMount() {
@@ -33,6 +38,7 @@ class App extends Component {
   // }
 
   render() {
+    // console.log(this.state.quiz)
   return (
     <div className="App">
       <main>
@@ -44,6 +50,7 @@ class App extends Component {
           <Route exact path='/artifact3' component={Artifact3} />
           <Route exact path='/artifact4' component={Artifact4} />
           <Route exact path='/artifact5' component={Artifact5} /> 
+          <Route exact path='/quiz1' render={() => <Quiz1 quiz={this.state.quiz} /> } /> 
         </Switch>
       </main>
       

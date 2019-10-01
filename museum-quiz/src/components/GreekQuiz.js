@@ -53,3 +53,5 @@ const greekQuiz = {
     }
   ]
 }
+
+export default greekQuiz
