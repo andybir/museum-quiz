@@ -13,7 +13,7 @@ class Artifact5 extends Component {
     async componentDidMount() {
         const response = await axios('https://api.harvardartmuseums.org/object/342292?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
         const artifact = response.data
-        console.log(artifact)
+        // console.log(artifact)
         const img = response.data.images[0].baseimageurl
         const title = response.data.title
         const text = response.data.labeltext
@@ -37,6 +37,7 @@ class Artifact5 extends Component {
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.text}</p>
+                <button><Link to='artifact4'>{'go back'}</Link></button>
                 <button><Link to='quiz1'>{'Quiz Time!'}</Link></button>
             </div>
         )

@@ -4,7 +4,7 @@ class CorrectAnswer extends Component {
     render() {
         return(
             <div>
-                <p>correct</p>
+                <p>correct!</p>
             </div>
         )
     }

@@ -53,7 +53,7 @@ class App extends Component {
           <Route exact path='/artifact4' component={Artifact4} />
           <Route exact path='/artifact5' component={Artifact5} /> 
           <Route exact path='/quiz1' render={() => <Quiz1 quiz={this.state.quiz} /> } /> 
-          <Route exact path='/correct-answer' component={CorrectAnswer} />
+          <Route exact path='/correct-answer/' component={CorrectAnswer} />
           <Route exact path='/incorrect-answer' component={IncorrectAnswer} />
         </Switch>
       </main>

@@ -31,6 +31,7 @@ class Artifact1 extends Component {
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.text}</p>
+                <button><Link to='/'>{'main menu'}</Link></button>
                 <button><Link to='artifact2'>{'Next'}</Link></button>
             </div>
         )

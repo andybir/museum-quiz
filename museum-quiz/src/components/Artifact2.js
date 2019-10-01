@@ -36,6 +36,7 @@ class Artifact2 extends Component {
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.description}</p>
+                <button><Link to='artifact1'>{'go back'}</Link></button>
                 <button><Link to='artifact3'>{'Next'}</Link></button>
             </div>
         )

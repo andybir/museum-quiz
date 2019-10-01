@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
 class Quiz1 extends Component {
     constructor(props) {
@@ -9,33 +10,55 @@ class Quiz1 extends Component {
         }
     }
     
-    getAnswer = () => {
+    getAnswer = (value) => {
+        console.log(value)
+        if (value) {
+            this.props.history.push('/correct-answer')
+        } else {
+            this.props.history.push('/incorrect-answer')
+        }
+
+        // Modal???
+        // console.log(e.target.getAttribute('data-correct'));
+        
         // console.log(this.state.quiz.a.isCorrect)
-        if (this.state.quiz.a.isCorrect === true) {
-       return <Link to={'/correct-answer'} /> 
-    } else if (this.state.quiz.b.isCorrect === true) {
-        return <Link to={'/correct-answer'} /> 
-    } else if (this.state.quiz.c.isCorrect === true) {
-        return <Link to={'/correct-answer'} />
-    } else if (this.state.quiz.d.isCorrect === true) {
-        return <Link to={'/correct-answer'} />
-    } else {return <Link to={'/incorrect-answer'} />}
-    }
+    //     if (e.target.getAttribute('data-correct') === true) {
+    //    return <Link to={'/correct-answer'} />
+    //     } else {
+    //         return <Link to={'/incorrect-answer'} />
+        } 
+    // } else if (this.state.quiz.b.isCorrect === true) {
+    //     return <Link to={'/correct-answer'} /> 
+    // } else if (this.state.quiz.c.isCorrect === true) {
+    //     return <Link to={'/correct-answer'} />
+    // } else if (this.state.quiz.d.isCorrect === true) {
+    //     return <Link to={'/correct-answer'} />
+    // } else {return <Link to={'/incorrect-answer'} />}
+        // if (e.target.getAttribute('data-correct') === true) {
+        //     return <Link to={'/correct-answer'} /> 
+        // } else {
+        //     return <Link to={'/incorrect-answer'} />
+        // }
+        // return e.target.getAttribute('data-correct') === true ? <Link to={'/correct-answer'} /> : <Link to={'/incorrect-answer'} />
+        
+    
+
+
 
     render () {
         // this.getAnswer()
         const quiz = this.props.quiz.questions[0] 
-        // console.log(quiz.a.isCorrect)
+        // console.log(quiz.a.isCorrect
         return(
             <div>
                 <h3>{quiz.title}</h3>
-                <p onClick={this.getAnswer}>{quiz.a.option}</p>
-                <p onClick={this.getAnswer}>{quiz.b.option}</p>
-                <p onClick={this.getAnswer}>{quiz.c.option}</p>
-                <p onClick={this.getAnswer}>{quiz.d.option}</p>
+                <p onClick={() => {this.getAnswer(quiz.a.isCorrect)}}> {quiz.a.option}</p>
+                <p onClick={() => {this.getAnswer(quiz.b.isCorrect)}}> {quiz.b.option}</p>
+                <p onClick={() => {this.getAnswer(quiz.c.isCorrect)}}> {quiz.c.option}</p>
+                <p onClick={() => {this.getAnswer(quiz.d.isCorrect)}}> {quiz.d.option}</p>
             </div>
         )
     }
 }
 
-export default Quiz1
+export default withRouter(Quiz1)
