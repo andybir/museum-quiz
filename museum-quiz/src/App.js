@@ -8,10 +8,12 @@ import GreekArt3 from './components/GreekArt3'
 import GreekArt4 from './components/GreekArt4'
 import GreekArt5 from './components/GreekArt5'
 import GreekQuiz1 from './components/GreekQuiz1'
+import GreekQuiz2 from './components/GreekQuiz2'
 import GreekTest from './components/GreekTest'
 import './App.css'
 import GreekCorAns1 from './components/GreekCorAns1'
 import GreekIncAns1 from './components/GreekIncAns1'
+
 
 class App extends Component {
   constructor() {
@@ -53,6 +55,7 @@ class App extends Component {
           <Route exact path='/greek-art4' component={GreekArt4} />
           <Route exact path='/greek-art5' component={GreekArt5} /> 
           <Route exact path='/greek-quiz1' render={() => <GreekQuiz1 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-quiz2' render={() => <GreekQuiz2 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-cor-ans1/' component={GreekCorAns1} />
           <Route exact path='/greek-inc-ans1' component={GreekIncAns1} />
         </Switch>
