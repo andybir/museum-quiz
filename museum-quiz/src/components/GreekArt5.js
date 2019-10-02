@@ -37,8 +37,8 @@ class GreekArt5 extends Component {
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.text}</p>
-                <button><Link to='greek-art4'>{'go back'}</Link></button>
-                <button><Link to='greek-quiz1'>{'Quiz Time!'}</Link></button>
+                <button><Link to='/'>{'Main Menu'}</Link></button>
+                <button><Link to='greek-quiz5'>{'Quiz Time!'}</Link></button>
             </div>
         )
     }

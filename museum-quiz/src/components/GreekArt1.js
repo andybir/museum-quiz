@@ -32,7 +32,7 @@ class GreekArt1 extends Component {
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.text}</p>
                 <button><Link to='/'>{'main menu'}</Link></button>
-                <button><Link to='greek-art2'>{'Next'}</Link></button>
+                <button><Link to='greek-quiz1'>{'Quiz Time!'}</Link></button>
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom'
 
 class GreekQuiz3 extends Component {
     constructor(props) {
@@ -29,6 +30,7 @@ class GreekQuiz3 extends Component {
                 <p onClick={() => {this.getAnswer(quiz.b.isCorrect)}}> {quiz.b.option}</p>
                 <p onClick={() => {this.getAnswer(quiz.c.isCorrect)}}> {quiz.c.option}</p>
                 <p onClick={() => {this.getAnswer(quiz.d.isCorrect)}}> {quiz.d.option}</p>
+                <button><Link to={'/greek-art3'}>Go Back</Link></button>
             </div>
         )
     }

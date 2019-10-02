@@ -12,6 +12,7 @@ import GreekQuiz2 from './components/GreekQuiz2'
 import GreekQuiz3 from './components/GreekQuiz3'
 import GreekQuiz4 from './components/GreekQuiz4'
 import GreekQuiz5 from './components/GreekQuiz5'
+import GreekComplete from './components/GreekComplete'
 import GreekTest from './components/GreekTest'
 import './App.css'
 import GreekCorAns1 from './components/GreekCorAns1'
@@ -70,6 +71,7 @@ class App extends Component {
           <Route exact path='/greek-quiz3' render={() => <GreekQuiz3 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-quiz4' render={() => <GreekQuiz4 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-quiz5' render={() => <GreekQuiz5 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-complete' component={GreekComplete} />
           <Route exact path='/greek-cor-ans1' component={GreekCorAns1} />
           <Route exact path='/greek-inc-ans1' component={GreekIncAns1} />
           <Route exact path='/greek-cor-ans2' component={GreekCorAns2} />

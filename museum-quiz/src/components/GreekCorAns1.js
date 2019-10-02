@@ -6,7 +6,7 @@ class GreekCorAns1 extends Component {
         return(
             <div>
                 <p>correct!</p>
-                <button><Link to={'/greek-quiz2'}>Next Question</Link></button>
+                <button><Link to={'/greek-art2'}>Next Artifact</Link></button>
             </div>
         )
     }
