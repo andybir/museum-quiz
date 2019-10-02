@@ -5,7 +5,7 @@ class GreekIncAns5 extends Component {
     render() {
         return(
             <div className='answer'>
-                <p>Try again!</p>
+                <h2>Try again!</h2>
                 <button><Link to={'/greek-quiz5'}>Try again!</Link></button>
             </div>
         )

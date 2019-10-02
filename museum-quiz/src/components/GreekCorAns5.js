@@ -5,9 +5,9 @@ class GreekCorAns5 extends Component {
     render() {
         return(
             <div className='answer'>
-                <p>Correct!</p>
+                <h2>Correct!</h2>
                 <p>You have finished the tour.  Want to explore another culture?</p>
-                <button><Link to={'/'}>Main Menu</Link></button>
+                <button><Link to={'/'}>Choose a culture</Link></button>
             </div>
         )
     }

@@ -5,7 +5,7 @@ class GreekCorAns1 extends Component {
     render() {
         return(
             <div className='answer'>
-                <p>Correct!</p>
+                <h2>Correct!</h2>
                 <button><Link to={'/greek-art2'}>Next Artifact</Link></button>
             </div>
         )
