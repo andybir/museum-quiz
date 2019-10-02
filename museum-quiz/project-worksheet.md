@@ -183,7 +183,7 @@ https://i.imgur.com/W0eU8Lz.jpg
 | render questions for each object | H | 4hrs| 3hrs | 3hrs |
 | render correct/incorrect + answer | H | 4hrs| 3hrs | 3hrs |
 | build out welcome page with collection choices | H | 4hrs| --- | --- |
-| build page to display results of quiz, offer choice to try again or choose new collection | H | 4hrs| --- | --- |
+| build page to display results of quiz, offer choice to try again or choose new collection | H | 4hrs| 1hrs | 1hrs |
 | CSS | H | 4hrs| --- | --- |
 | Total | H | 30hrs| --- | --- |
 
