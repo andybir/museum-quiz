@@ -27,10 +27,10 @@ class GreekArt1 extends Component {
 
     render() {
         return(
-            <div className="greek">
-                <h2>{this.state.title}</h2>
-                <img className='greek-img' src={this.state.img} alt='Mask of Silenos' />
-                <p>{this.state.text}</p>
+            <div className="artifact">
+                <h2 className='art-title'>{this.state.title}</h2>
+                <img className='art-img' src={this.state.img} alt='Mask of Silenos' />
+                <p className='art-text'>{this.state.text}</p>
                 <button><Link to='/'>{'main menu'}</Link></button>
                 <button><Link to='greek-quiz1'>{'Quiz Time!'}</Link></button>
             </div>

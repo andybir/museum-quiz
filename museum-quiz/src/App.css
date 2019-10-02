@@ -21,6 +21,13 @@
   color: #09d3ac;
 } */
 
+.header {
+  padding: 10px;
+  text-align: left;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: rgb(67, 121, 91);
+}
+
 .main-menu {
   /* margin: 0 auto; */
   height: 100vh;
@@ -33,10 +40,11 @@
 
 }
 
-.greek {
+.artifact {
   background-color: #eed491;
   height: 100vh;
   font-family: 'Vollkorn SC', serif;
+  padding: 10px;
 }
 
 .greek-font {
@@ -47,6 +55,18 @@
   width: 25%;
 }
 
-.greek-img {
+.art-img {
   width: 40%;
+  float: left;
+}
+
+.art-text {
+  margin: 10px;
+}
+
+.quiz {
+  background-color: #eed491;
+  height: 100vh;
+  font-family: 'Vollkorn SC', serif;
+  padding: 10px;
 }
