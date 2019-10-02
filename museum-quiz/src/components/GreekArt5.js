@@ -33,10 +33,10 @@ class GreekArt5 extends Component {
 
     render() {
         return(
-            <div className='greek'>
-                <h2>{this.state.title}</h2>
-                <img src={this.state.img} alt='' style={{width: 300}}/>
-                <p>{this.state.text}</p>
+            <div className='artifact'>
+                <h2 className='art-title'>{this.state.title}</h2>
+                <img className='art-img' src={this.state.img} alt='' style={{width: 300}}/>
+                <p className='art-text'>{this.state.text}</p>
                 <button><Link to='/'>{'Main Menu'}</Link></button>
                 <button><Link to='greek-quiz5'>{'Quiz Time!'}</Link></button>
             </div>

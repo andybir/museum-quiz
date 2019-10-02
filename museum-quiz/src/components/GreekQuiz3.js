@@ -24,7 +24,7 @@ class GreekQuiz3 extends Component {
         const quiz = this.props.quiz.questions[2] 
         // console.log(quiz.a.isCorrect
         return(
-            <div className='greek'>
+            <div className='quiz'>
                 <h3>{quiz.title}</h3>
                 <p onClick={() => {this.getAnswer(quiz.a.isCorrect)}}> {quiz.a.option}</p>
                 <p onClick={() => {this.getAnswer(quiz.b.isCorrect)}}> {quiz.b.option}</p>

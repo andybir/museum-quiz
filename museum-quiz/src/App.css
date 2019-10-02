@@ -2,43 +2,29 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #09d3ac;
-} */
-
 .header {
   padding: 10px;
   text-align: left;
   font-family: 'Julius Sans One', sans-serif;
-  background-color: rgb(67, 121, 91);
+  background-color: rgb(108, 157, 130);
+}
+
+.link:link {
+  text-decoration: none;
 }
 
 .main-menu {
   /* margin: 0 auto; */
   height: 100vh;
   background-color: #eec191;
-  
+  padding: 10px;
 }
 
 .main-menu-headings {
   font-family: 'Julius Sans One', sans-serif;
 
 }
+
 
 .artifact {
   background-color: #eed491;
@@ -70,3 +56,43 @@
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
 }
+
+.answer {
+  background-color: #eed491;
+  height: 100vh;
+  font-family: 'Vollkorn SC', serif;
+  padding: 10px;
+}
+
+.complete {
+  background-color: #eed491;
+  height: 100vh;
+  font-family: 'Vollkorn SC', serif;
+  padding: 10px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: right;
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: rgb(108, 157, 130);
+}
+
+/* .App-logo {
+  height: 40vmin;
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #09d3ac;
+} */

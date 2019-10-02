@@ -10,7 +10,7 @@ const Welcome = () => {
                 <h1>Welcome to Museum Quiz!</h1>
                 <h2>Choose collection below</h2>
                 </div>
-                <h3 className='greek-font'><Link to='/greek-art1'>Greek Culture</Link></h3>
+                <h3 className='greek-font link'><Link to='/greek-art1'>Greek Culture</Link></h3>
                 <Link to='/greek-art1'><img className='parthenon' src={Parthenon} alt='parthenon' /></Link>
                 
             </div>
