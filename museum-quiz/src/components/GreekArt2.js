@@ -32,12 +32,16 @@ class GreekArt2 extends Component {
 
     render() {
         return(
+            
             <div className='artifact'>
                 <h2 className='art-title'>{this.state.title}</h2>
                 <img className='art-img' src={this.state.img} alt='' />
                 <p className='art-text'>{this.state.description}</p>
+            
+            
                 <button className='art-button'><Link to='/'>{'Main Menu'}</Link></button>
                 <button className='art-button'><Link to='greek-quiz2'>{'Quiz Time!'}</Link></button>
+            
             </div>
         )
     }

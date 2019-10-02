@@ -11,7 +11,7 @@ const Welcome = () => {
                 <h2>Choose collection below</h2>
                 </div>
                 <h3 className='greek-font link'><Link to='/greek-art1'>Greek Culture</Link></h3>
-                <Link to='/greek-art1'><img className='parthenon' src={Parthenon} alt='parthenon' /></Link>
+                <Link to='/greek-art1'><img className='culture-img' src={Parthenon} alt='parthenon' /></Link>
                 
             </div>
         )
