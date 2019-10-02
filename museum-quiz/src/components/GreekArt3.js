@@ -36,7 +36,7 @@ class GreekArt3 extends Component {
         return(
             <div className='artifact'>
                 <h2 className='art-title'>{this.state.title}</h2>
-                <img className='art-img' src={this.state.img} alt='' style={{width: 300}}/>
+                <img className='art-img' src={this.state.img} alt='' />
                 <p className='art-text'>{this.state.commentary}</p>
                 <button><Link to='/'>{'Main Menu'}</Link></button>
                 <button><Link to='greek-quiz3'>{'Quiz Time!'}</Link></button>
