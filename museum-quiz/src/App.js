@@ -27,6 +27,7 @@ import GreekCorAns4 from './components/GreekCorAns4'
 import GreekIncAns4 from './components/GreekIncAns4'
 import GreekCorAns5 from './components/GreekCorAns5'
 import GreekIncAns5 from './components/GreekIncAns5'
+import NotFound from './components/NotFound'
 
 
 class App extends Component {
@@ -85,6 +86,7 @@ class App extends Component {
           <Route exact path='/greek-inc-ans4' component={GreekIncAns4} />
           <Route exact path='/greek-cor-ans5' component={GreekCorAns5} />
           <Route exact path='/greek-inc-ans5' component={GreekIncAns5} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </main>

@@ -78,6 +78,10 @@
   padding: 10px;
 }
 
+.not-found-img {
+  width: 70%;
+}
+
 .footer {
   padding: 10px;
   text-align: right;
