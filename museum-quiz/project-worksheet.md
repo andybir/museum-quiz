@@ -177,11 +177,11 @@ https://i.imgur.com/W0eU8Lz.jpg
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| render object img | H | 4hrs| --- | --- |
-| render object description | H | 3hrs| --- | --- |
-| create/upload questions to JSON | H | 3hrs| --- | --- |
-| render questions for each object | H | 4hrs| --- | --- |
-| render correct/incorrect + answer | H | 4hrs| --- | --- |
+| render object img | H | 4hrs| 1hrs | 1hrs |
+| render object description | H | 3hrs| 1hrs | 1hrs |
+| create/upload questions to JSON | H | 3hrs| 2hrs | 2hrs |
+| render questions for each object | H | 4hrs| 3hrs | 3hrs |
+| render correct/incorrect + answer | H | 4hrs| 3hrs | 3hrs |
 | build out welcome page with collection choices | H | 4hrs| --- | --- |
 | build page to display results of quiz, offer choice to try again or choose new collection | H | 4hrs| --- | --- |
 | CSS | H | 4hrs| --- | --- |
