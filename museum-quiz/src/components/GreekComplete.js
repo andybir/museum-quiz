@@ -5,8 +5,8 @@ class GreekComplete extends Component {
     render() {
         return(
             <div className='complete'>
-                <p>Great job! Explore another culture?</p>
-                <button><Link to={'/'}>Home</Link></button>
+                <h2>Great job! Explore another culture?</h2>
+                <button><Link to={'/'}>Main Menu</Link></button>
             </div>
         )
     }
