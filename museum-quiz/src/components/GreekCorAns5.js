@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class GreekCorAns5 extends Component {
     render() {
         return(
-            <div>
+            <div className='greek'>
                 <p>Correct!</p>
                 <p>You have finished the tour.  Want to explore another culture?</p>
                 <button><Link to={'/'}>Main Menu</Link></button>

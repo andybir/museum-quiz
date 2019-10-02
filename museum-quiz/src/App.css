@@ -2,11 +2,11 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,8 +15,38 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+/* .App-link {
+  color: #09d3ac;
+} */
+
+.main-menu {
+  /* margin: 0 auto; */
+  height: 100vh;
+  background-color: #eec191;
+  
 }
 
-.App-link {
-  color: #09d3ac;
+.main-menu-headings {
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.greek {
+  background-color: #eed491;
+  height: 100vh;
+  font-family: 'Vollkorn SC', serif;
+}
+
+.greek-font {
+  font-family: 'Vollkorn SC', serif;
+}
+
+.parthenon {
+  width: 25%;
+}
+
+.greek-img {
+  width: 40%;
 }

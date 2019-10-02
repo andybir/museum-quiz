@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Parthenon from '../imgs/ancient-greece.jpg'
 
 const Welcome = () => {
 
         return(
-            <div>
+            <div className='main-menu'>
+                <div className='main-menu-headings'>
                 <h1>Welcome to Museum Quiz!</h1>
                 <h2>Choose collection below</h2>
-                <h3><Link to='/greek-art1'>Greek Culture</Link></h3>
-                {/* <button><img src='https://www.greekboston.com/wp-content/uploads/2016/12/Hephaestus-Temple-Athens.jpg' alt='' style={{width: 300}}/><Link to='/collection'></Link></button> */}
+                </div>
+                <h3 className='greek-font'><Link to='/greek-art1'>Greek Culture</Link></h3>
+                <Link to='/greek-art1'><img className='parthenon' src={Parthenon} alt='parthenon' /></Link>
                 
             </div>
         )

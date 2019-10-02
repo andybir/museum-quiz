@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Welcome from './components/Welcome'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import GreekArt1 from './components/GreekArt1'
 import GreekArt2 from './components/GreekArt2'
 import GreekArt3 from './components/GreekArt3'
@@ -58,6 +60,7 @@ class App extends Component {
   return (
     <div className="App">
       <main>
+        <Header />
         <Switch>
           <Route exact path='/' component={Welcome} />
           {/* <Route exact path='/collection' render={() => <Collection artifact={this.state.artifact}/> } /> */}
@@ -83,6 +86,7 @@ class App extends Component {
           <Route exact path='/greek-cor-ans5' component={GreekCorAns5} />
           <Route exact path='/greek-inc-ans5' component={GreekIncAns5} />
         </Switch>
+        <Footer />
       </main>
       
     </div>

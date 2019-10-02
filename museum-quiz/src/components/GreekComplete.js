@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class GreekComplete extends Component {
     render() {
         return(
-            <div>
+            <div className='greek'>
                 <p>Great job! Explore another culture?</p>
                 <button><Link to={'/'}>Home</Link></button>
             </div>

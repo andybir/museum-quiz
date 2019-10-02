@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class GreekCorAns4 extends Component {
     render() {
         return(
-            <div>
+            <div className='greek'>
                 <p>correct!</p>
                 <button><Link to={'/greek-art5'}>Next Artifact</Link></button>
             </div>

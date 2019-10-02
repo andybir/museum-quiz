@@ -32,7 +32,7 @@ class GreekArt2 extends Component {
 
     render() {
         return(
-            <div>
+            <div className='greek'>
                 <h2>{this.state.title}</h2>
                 <img src={this.state.img} alt='' style={{width: 300}}/>
                 <p>{this.state.description}</p>
