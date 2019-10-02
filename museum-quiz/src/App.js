@@ -9,10 +9,21 @@ import GreekArt4 from './components/GreekArt4'
 import GreekArt5 from './components/GreekArt5'
 import GreekQuiz1 from './components/GreekQuiz1'
 import GreekQuiz2 from './components/GreekQuiz2'
+import GreekQuiz3 from './components/GreekQuiz3'
+import GreekQuiz4 from './components/GreekQuiz4'
+import GreekQuiz5 from './components/GreekQuiz5'
 import GreekTest from './components/GreekTest'
 import './App.css'
 import GreekCorAns1 from './components/GreekCorAns1'
 import GreekIncAns1 from './components/GreekIncAns1'
+import GreekCorAns2 from './components/GreekCorAns2'
+import GreekIncAns2 from './components/GreekIncAns2'
+import GreekCorAns3 from './components/GreekCorAns3'
+import GreekIncAns3 from './components/GreekIncAns3'
+import GreekCorAns4 from './components/GreekCorAns4'
+import GreekIncAns4 from './components/GreekIncAns4'
+import GreekCorAns5 from './components/GreekCorAns5'
+import GreekIncAns5 from './components/GreekIncAns5'
 
 
 class App extends Component {
@@ -56,8 +67,19 @@ class App extends Component {
           <Route exact path='/greek-art5' component={GreekArt5} /> 
           <Route exact path='/greek-quiz1' render={() => <GreekQuiz1 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-quiz2' render={() => <GreekQuiz2 quiz={this.state.quiz} /> } /> 
-          <Route exact path='/greek-cor-ans1/' component={GreekCorAns1} />
+          <Route exact path='/greek-quiz3' render={() => <GreekQuiz3 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-quiz4' render={() => <GreekQuiz4 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-quiz5' render={() => <GreekQuiz5 quiz={this.state.quiz} /> } /> 
+          <Route exact path='/greek-cor-ans1' component={GreekCorAns1} />
           <Route exact path='/greek-inc-ans1' component={GreekIncAns1} />
+          <Route exact path='/greek-cor-ans2' component={GreekCorAns2} />
+          <Route exact path='/greek-inc-ans2' component={GreekIncAns2} />
+          <Route exact path='/greek-cor-ans3' component={GreekCorAns3} />
+          <Route exact path='/greek-inc-ans3' component={GreekIncAns3} />
+          <Route exact path='/greek-cor-ans4' component={GreekCorAns4} />
+          <Route exact path='/greek-inc-ans4' component={GreekIncAns4} />
+          <Route exact path='/greek-cor-ans5' component={GreekCorAns5} />
+          <Route exact path='/greek-inc-ans5' component={GreekIncAns5} />
         </Switch>
       </main>
       
