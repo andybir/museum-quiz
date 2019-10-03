@@ -141,17 +141,21 @@ a {
     text-align: center;
   }
   .welcome {
-    height: 175vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .artifact {
     /* background-size: auto; */
-    /* height: 100vh; */
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .complete {
+    height: 100vh;
   }
   .art-img {
     width: 90%;
