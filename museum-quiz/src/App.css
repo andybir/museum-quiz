@@ -28,7 +28,7 @@ button {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .quiz-choice {
@@ -81,7 +81,7 @@ a {
 
 .artifact {
   background-color: #eed491;
-  height: 100vmax;
+  height: 120vh;
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
 }

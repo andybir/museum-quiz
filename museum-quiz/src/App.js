@@ -13,6 +13,11 @@ import EgyptArt2 from './components/EgyptArt2'
 import EgyptArt3 from './components/EgyptArt3'
 import EgyptArt4 from './components/EgyptArt4'
 import EgyptArt5 from './components/EgyptArt5'
+import KoreanArt1 from './components/KoreanArt1'
+import KoreanArt2 from './components/KoreanArt2'
+import KoreanArt3 from './components/KoreanArt3'
+import KoreanArt4 from './components/KoreanArt4'
+import KoreanArt5 from './components/KoreanArt5'
 import GreekQuiz1 from './components/GreekQuiz1'
 import GreekQuiz2 from './components/GreekQuiz2'
 import GreekQuiz3 from './components/GreekQuiz3'
@@ -79,6 +84,11 @@ class App extends Component {
           <Route exact path='/egypt-art3' component={EgyptArt3} />
           <Route exact path='/egypt-art4' component={EgyptArt4} />
           <Route exact path='/egypt-art5' component={EgyptArt5} /> 
+          <Route exact path='/korean-art1' component={KoreanArt1} /> 
+          <Route exact path='/korean-art2' component={KoreanArt2} /> 
+          <Route exact path='/korean-art3' component={KoreanArt3} /> 
+          <Route exact path='/korean-art4' component={KoreanArt4} /> 
+          <Route exact path='/korean-art5' component={KoreanArt5} /> 
           <Route exact path='/greek-quiz1' render={() => <GreekQuiz1 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-quiz2' render={() => <GreekQuiz2 quiz={this.state.quiz} /> } /> 
           <Route exact path='/greek-quiz3' render={() => <GreekQuiz3 quiz={this.state.quiz} /> } /> 
