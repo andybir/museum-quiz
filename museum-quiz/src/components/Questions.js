@@ -196,6 +196,104 @@ const questions = {
         option: "mummies",
         isCorrect: false
       }
+    },
+    {
+      title: "In the East Asian dualistic yin-yang interpretation of the universe, which creatures symbolize yin and yang?",
+      a: {
+        option: "dragon and phoenix",
+        isCorrect: true
+      },
+      b: { 
+        option: "bear and monkey",
+        isCorrect: false
+      },
+      c: {
+        option: "the salamander and jotun",
+        isCorrect: false
+      },
+      d: { 
+        option: "the banshee and kappa",
+        isCorrect: false
+      },
+    },
+    {
+      title: "When did Buddhist proselytizers enter the Korean peninsula?",
+      a: {
+        option: "Second century",
+        isCorrect: false
+      },
+      b: { 
+        option: "Third century",
+        isCorrect: false
+      },
+      c: {
+        option: "Fourth Century",
+        isCorrect: true
+      },
+      d: { 
+        option: "Fifth Century",
+        isCorrect: false
+      }
+
+    },
+    {
+      title: "Portable shrines built in Korea often shared traits form which other cultures?",
+      a: {
+        option: "Russian and Hungarian",
+        isCorrect: false
+      },
+      b: { 
+        option: "Italian and Maltese",
+        isCorrect: false
+      },
+      c: {
+        option: "Chinese and Japanese",
+        isCorrect: true
+      },
+      d: { 
+        option: "Thai and Vietnamese",
+        isCorrect: false
+      }
+
+    },
+    {
+      title: "What is a 'hao'?",
+      a: {
+        option: "a sobriquet",
+        isCorrect: true
+      },
+      b: { 
+        option: "a play",
+        isCorrect: false
+      },
+      c: {
+        option: "a bow tie",
+        isCorrect: false
+      },
+      d: { 
+        option: "a monologue",
+        isCorrect: false
+      }
+
+    },
+    {
+      title: "What is an 'arhat'?",
+      a: {
+        option: "a ditch digger",
+        isCorrect: false
+      },
+      b: { 
+        option: "a pries",
+        isCorrect: false
+      },
+      c: {
+        option: "a banker",
+        isCorrect: false
+      },
+      d: { 
+        option: "a saintly being",
+        isCorrect: true
+      }
     }
   ]
 }
