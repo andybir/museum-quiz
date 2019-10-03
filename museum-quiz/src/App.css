@@ -148,7 +148,7 @@ a {
   }
   .artifact {
     /* background-size: auto; */
-    height: 200vmax;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
