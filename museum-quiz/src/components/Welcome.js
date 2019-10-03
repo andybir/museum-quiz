@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Parthenon from '../imgs/ancient-greece.jpg'
 import Sphinx from '../imgs/sphinx-pyramid.jpg'
-import Palace from '../imgs/korean-palace.jpg'
+import Palace from '../imgs/Changdeokgung.jpg'
 
 const Welcome = () => {
 
         return(
-            <div className='main-menu'>
+            <div className='welcome'>
                 <div className='main-menu-headings'>
                 <h1>Welcome to Museum Quiz!</h1>
-                <h2>Choose collection below</h2>
+                <h2>Choose a culture below</h2>
                 </div>
                 <div className='culture-choices'>
                 <div className='culture-button'>   
