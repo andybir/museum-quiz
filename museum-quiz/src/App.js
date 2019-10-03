@@ -36,6 +36,16 @@ import GreekCorAns4 from './components/GreekCorAns4'
 import GreekIncAns4 from './components/GreekIncAns4'
 import GreekCorAns5 from './components/GreekCorAns5'
 import GreekIncAns5 from './components/GreekIncAns5'
+import EgyptCorrect1 from './components/EgyptCorrect1'
+import EgyptCorrect2 from './components/EgyptCorrect2'
+import EgyptCorrect3 from './components/EgyptCorrect3'
+import EgyptCorrect4 from './components/EgyptCorrect4'
+import EgyptCorrect5 from './components/EgyptCorrect5'
+import EgyptIncorrect1 from './components/EgyptIncorrect1'
+import EgyptIncorrect2 from './components/EgyptIncorrect2'
+import EgyptIncorrect3 from './components/EgyptIncorrect3'
+import EgyptIncorrect4 from './components/EgyptIncorrect4'
+import EgyptIncorrect5 from './components/EgyptIncorrect5'
 import NotFound from './components/NotFound'
 
 
@@ -90,6 +100,16 @@ class App extends Component {
           <Route exact path='/greek-inc-ans4' component={GreekIncAns4} />
           <Route exact path='/greek-cor-ans5' component={GreekCorAns5} />
           <Route exact path='/greek-inc-ans5' component={GreekIncAns5} />
+          <Route exact path='/egypt-correct1' component={EgyptCorrect1} />
+          <Route exact path='/egypt-correct2' component={EgyptCorrect2} />
+          <Route exact path='/egypt-correct3' component={EgyptCorrect3} />
+          <Route exact path='/egypt-correct4' component={EgyptCorrect4} />
+          <Route exact path='/egypt-correct5' component={EgyptCorrect5} />
+          <Route exact path='/egypt-incorrect1' component={EgyptIncorrect1} />
+          <Route exact path='/egypt-incorrect2' component={EgyptIncorrect2} />
+          <Route exact path='/egypt-incorrect3' component={EgyptIncorrect3} />
+          <Route exact path='/egypt-incorrect4' component={EgyptIncorrect4} />
+          <Route exact path='/egypt-incorrect5' component={EgyptIncorrect5} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
