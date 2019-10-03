@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return(
             <div className='header'>
-                <p>Museum Quiz</p>
+                <h3>Museum Quiz</h3>
                 <button><Link to={'/'}>Main Menu</Link></button>
             </div>
         )
