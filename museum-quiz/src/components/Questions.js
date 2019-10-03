@@ -1,4 +1,4 @@
-const greekQuiz = {
+const questions = {
   questions: [
 
     {
@@ -102,4 +102,4 @@ const greekQuiz = {
   ]
 }
 
-export default greekQuiz
+export default questions

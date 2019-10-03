@@ -15,7 +15,7 @@ import GreekQuiz3 from './components/GreekQuiz3'
 import GreekQuiz4 from './components/GreekQuiz4'
 import GreekQuiz5 from './components/GreekQuiz5'
 import GreekComplete from './components/GreekComplete'
-import GreekTest from './components/GreekTest'
+import Questions from './components/Questions'
 import './App.css'
 import GreekCorAns1 from './components/GreekCorAns1'
 import GreekIncAns1 from './components/GreekIncAns1'
@@ -35,7 +35,7 @@ class App extends Component {
     super()
     this.state = {
       artifact: [],
-      quiz: GreekTest
+      quiz: Questions
       
     }
     
