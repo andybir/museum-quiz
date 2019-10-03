@@ -28,6 +28,11 @@ import EgyptQuiz2 from './components/EgyptQuiz2'
 import EgyptQuiz3 from './components/EgyptQuiz3'
 import EgyptQuiz4 from './components/EgyptQuiz4'
 import EgyptQuiz5 from './components/EgyptQuiz5'
+import KoreanQuiz1 from './components/KoreanQuiz1'
+import KoreanQuiz2 from './components/KoreanQuiz2'
+import KoreanQuiz3 from './components/KoreanQuiz3'
+import KoreanQuiz4 from './components/KoreanQuiz4'
+import KoreanQuiz5 from './components/KoreanQuiz5'
 import GreekComplete from './components/GreekComplete'
 import Questions from './components/Questions'
 import './App.css'
@@ -99,6 +104,11 @@ class App extends Component {
           <Route exact path='/egypt-quiz3' render={() => <EgyptQuiz3 quiz={this.state.quiz} /> } /> 
           <Route exact path='/egypt-quiz4' render={() => <EgyptQuiz4 quiz={this.state.quiz} /> } /> 
           <Route exact path='/egypt-quiz5' render={() => <EgyptQuiz5 quiz={this.state.quiz} /> } />
+          <Route exact path='/korean-quiz1' render={() => <KoreanQuiz1 quiz={this.state.quiz} /> } />
+          <Route exact path='/korean-quiz2' render={() => <KoreanQuiz2 quiz={this.state.quiz} /> } />
+          <Route exact path='/korean-quiz3' render={() => <KoreanQuiz3 quiz={this.state.quiz} /> } />
+          <Route exact path='/korean-quiz4' render={() => <KoreanQuiz4 quiz={this.state.quiz} /> } />
+          <Route exact path='/korean-quiz5' render={() => <KoreanQuiz5 quiz={this.state.quiz} /> } />
           <Route exact path='/greek-complete' component={GreekComplete} />
           <Route exact path='/greek-cor-ans1' component={GreekCorAns1} />
           <Route exact path='/greek-inc-ans1' component={GreekIncAns1} />
