@@ -56,6 +56,16 @@ import EgyptIncorrect2 from './components/EgyptIncorrect2'
 import EgyptIncorrect3 from './components/EgyptIncorrect3'
 import EgyptIncorrect4 from './components/EgyptIncorrect4'
 import EgyptIncorrect5 from './components/EgyptIncorrect5'
+import KoreanCorrect1 from './components/KoreanCorrect1'
+import KoreanCorrect2 from './components/KoreanCorrect2'
+import KoreanCorrect3 from './components/KoreanCorrect3'
+import KoreanCorrect4 from './components/KoreanCorrect4'
+import KoreanCorrect5 from './components/KoreanCorrect5'
+import KoreanIncorrect1 from './components/KoreanIncorrect1'
+import KoreanIncorrect2 from './components/KoreanIncorrect2'
+import KoreanIncorrect3 from './components/KoreanIncorrect3'
+import KoreanIncorrect4 from './components/KoreanIncorrect4'
+import KoreanIncorrect5 from './components/KoreanIncorrect5'
 import NotFound from './components/NotFound'
 
 
@@ -130,6 +140,16 @@ class App extends Component {
           <Route exact path='/egypt-incorrect3' component={EgyptIncorrect3} />
           <Route exact path='/egypt-incorrect4' component={EgyptIncorrect4} />
           <Route exact path='/egypt-incorrect5' component={EgyptIncorrect5} />
+          <Route exact path='/korean-correct1' component={KoreanCorrect1} />
+          <Route exact path='/korean-correct2' component={KoreanCorrect2} />
+          <Route exact path='/korean-correct3' component={KoreanCorrect3} />
+          <Route exact path='/korean-correct4' component={KoreanCorrect4} />
+          <Route exact path='/korean-correct5' component={KoreanCorrect5} />
+          <Route exact path='/korean-incorrect1' component={KoreanIncorrect1} />
+          <Route exact path='/korean-incorrect2' component={KoreanIncorrect2} />
+          <Route exact path='/korean-incorrect3' component={KoreanIncorrect3} />
+          <Route exact path='/korean-incorrect4' component={KoreanIncorrect4} />
+          <Route exact path='/korean-incorrect5' component={KoreanIncorrect5} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
