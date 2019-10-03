@@ -31,6 +31,16 @@ p {
   font-size: 20px;
 }
 
+.quiz-choice {
+  background-size: 50px;
+}
+
+.quiz-choice:hover {
+  background-color: #eec191;
+
+  color: white;
+}
+
 button:hover {
   background-color: #eec191;
   color: white;
@@ -58,6 +68,16 @@ a {
 
 }
 
+/* .culture-choices {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.culture-button {
+  display: flex;
+  flex-direction: column;
+} */
 
 .artifact {
   background-color: #eed491;
