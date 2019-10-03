@@ -100,100 +100,100 @@ const questions = {
       }
     },
     {
-      title: "egypt question 1",
+      title: "The art of bronzecasting reached new heights in which period?",
       a: {
-        option: "Aphrodite",
+        option: "The First period",
         isCorrect: false
       },
       b: { 
-        option: "Dionysus",
-        isCorrect: true
+        option: "Overtime",
+        isCorrect: false
       },
       c: {
-        option: "Demeter",
+        option: "The Ptolemaic Period",
         isCorrect: false
       },
       d: { 
-        option: "Hera",
-        isCorrect: false
+        option: "The Third Intermediate Period",
+        isCorrect: true
       },
     },
     {
-      title: "What is a Nereid?",
+      title: "Isis was thought to be the sister and wife of which god?",
       a: {
-        option: "the mother of Achilles",
+        option: "Horus",
         isCorrect: false
       },
       b: { 
-        option: "perhaps Triton?",
+        option: "Thor",
         isCorrect: false
       },
       c: {
-        option: "The sea nymph daughters of Nereus",
-        isCorrect: true
-      },
-      d: { 
-        option: "a what now?",
-        isCorrect: false
-      }
-
-    },
-    {
-      title: "The phylakes depicted in the mixing bowl could also be described as",
-      a: {
-        option: "I don't give a phylake",
-        isCorrect: false
-      },
-      b: { 
-        option: "politicians",
-        isCorrect: false
-      },
-      c: {
-        option: "South Italian red-figures",
+        option: "Hathor",
         isCorrect: false
       },
       d: { 
-        option: "actors",
+        option: "Osiris",
         isCorrect: true
       }
 
     },
     {
-      title: "What were strigils used for in ancient Greece?",
+      title: "In Egypt, the frog was a symbol of:",
       a: {
-        option: "to scrape oil, sweat, and sand off the body after exercise",
+        option: "fertility",
         isCorrect: true
       },
       b: { 
-        option: "to eat ramen noodles",
+        option: "strength",
         isCorrect: false
       },
       c: {
-        option: "they were used by gladiators",
+        option: "knowledge",
         isCorrect: false
       },
       d: { 
-        option: "to help farmers till their land",
+        option: "wealth",
         isCorrect: false
       }
 
     },
     {
-      title: "Items made out of which material were valued for their golden sheen, versatility, and durability?",
+      title: "The snake figurine most commonly took a pose in which shape?",
       a: {
-        option: "gold",
+        option: "pretzel",
         isCorrect: false
       },
       b: { 
-        option: "copper alloy",
-        isCorrect: true
-      },
-      c: {
-        option: "adamantium",
+        option: "hexagon",
         isCorrect: false
       },
+      c: {
+        option: "figure-eight",
+        isCorrect: true
+      },
       d: { 
-        option: "silver",
+        option: "figure-four leg lock",
+        isCorrect: false
+      }
+
+    },
+    {
+      title: "The Deity's Beard was typically attached to statues of which type of mythical figures?",
+      a: {
+        option: "sphinx",
+        isCorrect: false
+      },
+      b: { 
+        option: "griffins",
+        isCorrect: false
+      },
+      c: {
+        option: "anthropomorphic gods",
+        isCorrect: true
+      },
+      d: { 
+        option: "mummies",
         isCorrect: false
       }
     }
