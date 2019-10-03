@@ -13,15 +13,32 @@
   background-color: rgb(108, 157, 130);
 }
 
+button {
+  background-color: rgb(108, 157, 130);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
 
+button:hover {
+  background-color: #eec191;
+  color: white;
+}
 
-.link:link {
+a:link {
   text-decoration: none;
 }
 
 .main-menu {
   /* margin: 0 auto; */
-  height: 100vh;
+  height: 100vmax;
   background-color: #eec191;
   padding: 10px;
 }
@@ -34,7 +51,7 @@
 
 .artifact {
   background-color: #eed491;
-  min-height: 100vh;
+  height: 100vmin;
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
 }
@@ -59,14 +76,14 @@
 
 .quiz {
   background-color: #eed491;
-  height: 100vh;
+  height: 100vmin;
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
 }
 
 .answer {
   background-color: #eed491;
-  height: 100vh;
+  height: 100vmin;
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
 }
@@ -90,6 +107,12 @@
 }
 
 @media only screen and (max-width: 736px) {
+  .main-menu {
+    height: 175vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .artifact {
     height: 175vh;
     display: flex;
