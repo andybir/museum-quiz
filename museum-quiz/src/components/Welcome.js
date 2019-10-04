@@ -22,7 +22,7 @@ const Welcome = () => {
                 <Link to='/egypt-art1'><img className='culture-img' src={Sphinx} alt='parthenon' /></Link>
                 </div>
                 <div className='culture-button'>
-                <h3 className='korean-font link'><Link to='/korean-art1'>Ancient Korean Culture</Link></h3>
+                <h3 className='korean-font link'><Link to='/korean-art1'>Classical Korean Culture</Link></h3>
                 <Link to='/korean-art1'><img className='culture-img' src={Palace} alt='parthenon' /></Link>
                 </div>
                 </div>

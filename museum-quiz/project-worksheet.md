@@ -182,28 +182,32 @@ https://i.imgur.com/W0eU8Lz.jpg
 | create/upload questions to JSON | H | 3hrs| 2hrs | 2hrs |
 | render questions for each object | H | 4hrs| 3hrs | 3hrs |
 | render correct/incorrect + answer | H | 4hrs| 3hrs | 3hrs |
-| build out welcome page with collection choices | H | 4hrs| --- | --- |
+| build out welcome page with collection choices | H | 4hrs| 2hrs | 2hrs |
 | build page to display results of quiz, offer choice to try again or choose new collection | H | 4hrs| 1hrs | 1hrs |
-| CSS | H | 4hrs| --- | --- |
-| Total | H | 30hrs| --- | --- |
+| CSS | H | 4hrs| 4hrs | 4hrs |
+| Total | H | 30hrs| 17hrs | 17hrs |
 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
 
 ## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+import { withRouter } from 'react-router'
 
+getAnswer = (value) => {
+        if (value) {
+            this.props.history.push('/egypt-correct5')
+        } else {
+            this.props.history.push('/egypt-incorrect5')
+        }
+    } 
+    
+    render () {
+        const quiz = this.props.quiz.questions[9] 
+        return(
+            <div className='quiz'>
+                <h2>{quiz.title}</h2>
+                <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.a.isCorrect)}}> {quiz.a.option}</p>
+```
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object

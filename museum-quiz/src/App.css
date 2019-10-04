@@ -13,10 +13,15 @@
   background-color: rgb(108, 157, 130);
 }
 
+.header-title {
+
+}
+
 button {
   background-color: rgb(108, 157, 130);
   border: none;
   color: white;
+  font-weight: bold;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
