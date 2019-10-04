@@ -28,7 +28,6 @@ class EgyptQuiz5 extends Component {
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.c.isCorrect)}}> {quiz.c.option}</p>
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.d.isCorrect)}}> {quiz.d.option}</p>
                 <button><Link to={'/egypt-art5'}>Go Back</Link></button>
-                
             </div>
         )
     }

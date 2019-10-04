@@ -11,29 +11,23 @@ class EgyptQuiz3 extends Component {
     }
     
     getAnswer = (value) => {
-        console.log(value)
         if (value) {
             this.props.history.push('/egypt-correct3')
         } else {
             this.props.history.push('/egypt-incorrect3')
         }
-        // Modal???    
-        } 
+    } 
     
     render () {
-        // this.getAnswer()
         const quiz = this.props.quiz.questions[7] 
-        // console.log(quiz.a.isCorrect
         return(
             <div className='quiz'>
                 <h2>{quiz.title}</h2>
-                
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.a.isCorrect)}}> {quiz.a.option}</p>
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.b.isCorrect)}}> {quiz.b.option}</p>
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.c.isCorrect)}}> {quiz.c.option}</p>
                 <p className='quiz-choice' onClick={() => {this.getAnswer(quiz.d.isCorrect)}}> {quiz.d.option}</p>
                 <button><Link to={'/egypt-art3'}>Go Back</Link></button>
-                
             </div>
         )
     }

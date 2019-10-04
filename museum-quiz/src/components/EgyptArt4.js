@@ -13,7 +13,6 @@ class EgyptArt4 extends Component {
     async componentDidMount() {
         const response = await axios('https://api.harvardartmuseums.org/object/304061?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
         const artifact = response.data
-        // console.log(artifact)
         const img = response.data.images[0].baseimageurl
         const title = response.data.title
         const text = response.data.labeltext
@@ -38,7 +37,6 @@ class EgyptArt4 extends Component {
                 <h2 className='art-title'>{this.state.title}</h2>
                 <img className='art-img' src={this.state.img} alt='' />
                 <p className='art-text'>{this.state.context}</p>
-                {/* <button><Link to='/'>{'Main Menu'}</Link></button> */}
                 <button><Link to='egypt-quiz4'>{'Quiz Time!'}</Link></button>
             </div>
         )

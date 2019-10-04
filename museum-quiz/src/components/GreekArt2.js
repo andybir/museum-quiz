@@ -13,7 +13,6 @@ class GreekArt2 extends Component {
     async componentDidMount() {
         const response = await axios('https://api.harvardartmuseums.org/object/288118?apikey=c7afc0b0-e325-11e9-9fc2-ed594f20726e')
         const artifact = response.data
-        // console.log(details)
         const img = response.data.images[0].baseimageurl
         const title = response.data.title
         const text = response.data.labeltext
@@ -28,7 +27,7 @@ class GreekArt2 extends Component {
           description: description,
           
         })
-      }
+    }
 
     render() {
         return(
@@ -37,9 +36,7 @@ class GreekArt2 extends Component {
                 <h2 className='art-title'>{this.state.title}</h2>
                 <img className='art-img' src={this.state.img} alt='' />
                 <p className='art-text'>{this.state.description}</p>
-                {/* <button className='art-button'><Link to='/'>{'Main Menu'}</Link></button> */}
                 <button className='art-button'><Link to='greek-quiz2'>{'Quiz Time!'}</Link></button>
-            
             </div>
         )
     }
