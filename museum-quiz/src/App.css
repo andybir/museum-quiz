@@ -14,7 +14,7 @@
 }
 
 .header-title {
-
+  margin: 10px 0 10px 30px;
 }
 
 button {
@@ -149,6 +149,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .header-title {
+    margin: 0 auto;
   }
   .artifact {
     /* background-size: auto; */
